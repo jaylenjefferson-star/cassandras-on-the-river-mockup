@@ -19,6 +19,15 @@ links.querySelectorAll('a').forEach((a) =>
     toggle.setAttribute('aria-expanded', 'false');
   })
 );
+// Close mobile menu on Escape (keyboard UX)
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && links.classList.contains('is-open')) {
+    links.classList.remove('is-open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.focus();
+  }
+});
 
 // ===== Scroll reveal =====
 const revealEls = document.querySelectorAll('.reveal');
@@ -39,18 +48,67 @@ if ('IntersectionObserver' in window) {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }
 
-// ===== Menu tabs =====
+// ===== Menu tabs (accessible) =====
 const tabs = document.querySelectorAll('.menu__tab');
 const panels = document.querySelectorAll('.menu__panel');
-tabs.forEach((tab) => {
-  tab.addEventListener('click', () => {
-    tabs.forEach((t) => t.classList.remove('is-active'));
-    panels.forEach((p) => p.classList.remove('is-active'));
-    tab.classList.add('is-active');
-    const target = document.querySelector(`[data-panel="${tab.dataset.tab}"]`);
-    if (target) target.classList.add('is-active');
+function activateTab(tab) {
+  tabs.forEach((t) => {
+    t.classList.remove('is-active');
+    t.setAttribute('aria-selected', 'false');
+  });
+  panels.forEach((p) => p.classList.remove('is-active'));
+  tab.classList.add('is-active');
+  tab.setAttribute('aria-selected', 'true');
+  const target = document.querySelector(`[data-panel="${tab.dataset.tab}"]`);
+  if (target) target.classList.add('is-active');
+}
+tabs.forEach((tab, i) => {
+  tab.setAttribute('aria-selected', tab.classList.contains('is-active') ? 'true' : 'false');
+  tab.addEventListener('click', () => activateTab(tab));
+  // Arrow-key navigation between tabs
+  tab.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const dir = e.key === 'ArrowRight' ? 1 : -1;
+      const next = tabs[(i + dir + tabs.length) % tabs.length];
+      next.focus();
+      activateTab(next);
+    }
   });
 });
+
+// ===== Scroll-spy: mark active nav link (aria-current) =====
+const navAnchors = [...links.querySelectorAll('a[href^="#"]')];
+const sections = navAnchors
+  .map((a) => document.querySelector(a.getAttribute('href')))
+  .filter(Boolean);
+if ('IntersectionObserver' in window && sections.length) {
+  const spy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navAnchors.forEach((a) =>
+            a.toggleAttribute('aria-current', a.getAttribute('href') === `#${id}`)
+          );
+        }
+      });
+    },
+    { rootMargin: '-45% 0px -50% 0px' }
+  );
+  sections.forEach((s) => spy.observe(s));
+}
+
+// ===== Large-party hint =====
+const guests = document.getElementById('guests');
+const partyHint = document.getElementById('partyHint');
+if (guests && partyHint) {
+  const updateHint = () => {
+    partyHint.hidden = !/10/.test(guests.value);
+  };
+  guests.addEventListener('change', updateHint);
+  updateHint();
+}
 
 // ===== Reservation form (demo) =====
 const form = document.getElementById('reserveForm');
@@ -62,7 +120,9 @@ form.addEventListener('submit', (e) => {
     return;
   }
   note.hidden = false;
-  form.querySelector('button[type="submit"]').textContent = 'Reservation Requested ✓';
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Reservation Requested ✓';
+  btn.disabled = true;
 });
 
 // ===== Footer year =====

@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cassandra's on the River — authentic Cajun & Creole seafood in Shreveport, LA. Reservations, happy hour, tableside dining & takeout." />
-  <title>Cassandra's on the River | Cajun & Creole Seafood · Shreveport, LA</title>
+  <meta name="description" content="Cassandra's on the River — authentic Cajun & Creole seafood and Southern comfort on the Red River in Shreveport, LA. Reserve a table, private dining, live music, and happy hour." />
+  <title>Cassandra's on the River | Louisiana Seafood · Shreveport, LA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#signature" class="skip-link">Skip to content</a>
   <!-- Top announcement bar -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__item">📍 Shreveport, LA · On the River</span>
-      <span class="topbar__item topbar__item--accent">Happy Hour · Tue–Fri · 3–6 PM</span>
+      <span class="topbar__item">📍 500 Clyde Fant Pkwy, Ste 100 · Shreveport, LA</span>
+      <span class="topbar__item topbar__item--accent">Happy Hour · 3–6 PM*</span>
       <a href="tel:3186267159" class="topbar__item topbar__phone">📞 (318) 626-7159</a>
     </div>
   </div>
@@ -27,13 +28,15 @@
         <img src="images/logo.png" alt="Cassandra's on the River" class="brand__logo" />
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#happy-hour">Happy Hour</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#careers">Careers</a>
-        <a href="#contact">Visit</a>
-        <a href="#reserve" class="btn btn--sm btn--primary nav__cta">Reserve a Table</a>
+        <a href="#menus">Menus</a>
+        <a href="#private">Private Dining</a>
+        <a href="#events">Events</a>
+        <a href="#story">Our Story</a>
+        <a href="#visit">Visit</a>
+        <span class="nav__ctas">
+          <a href="#reserve" class="btn btn--sm btn--primary">Reserve a Table</a>
+          <a href="tel:3186267159" class="btn btn--sm btn--outline">Order Takeout</a>
+        </span>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -41,218 +44,414 @@
     </div>
   </header>
 
+  <main>
   <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="container hero__content">
-      <p class="hero__eyebrow reveal">Authentic Cajun &amp; Creole · Shreveport, LA</p>
+      <p class="hero__eyebrow reveal">Cajun · Creole · Southern · On the Red River</p>
       <h1 class="hero__title reveal">
-        A Taste of Louisiana,<br /><em>Right on the River.</em>
+        Louisiana Flavor.<br /><em>Riverfront Energy.</em>
       </h1>
       <p class="hero__lede reveal">
-        Fresh Gulf seafood, smothered classics, and soul-warming Creole cooking —
-        served with Southern hospitality for your whole family.
+        Authentic Cajun and Creole cooking, hand-crafted cocktails, and live music —
+        served with Southern hospitality in the heart of Shreveport's Red River District.
       </p>
       <div class="hero__actions reveal">
         <a href="#reserve" class="btn btn--primary">Reserve a Table</a>
-        <a href="#menu" class="btn btn--ghost">Explore the Menu</a>
+        <a href="#menus" class="btn btn--ghost">View the Menu</a>
       </div>
       <div class="hero__meta reveal">
-        <div class="hero__meta-item"><strong>4.8★</strong><span>Guest Rating</span></div>
-        <div class="hero__meta-item"><strong>Tue–Sun</strong><span>Open Weekly</span></div>
-        <div class="hero__meta-item"><strong>Any Size</strong><span>Reservations</span></div>
+        <div class="hero__meta-item"><strong>Est. 2024</strong><span>Red River District</span></div>
+        <div class="hero__meta-item"><strong>Full Bar</strong><span>Signature Cocktails</span></div>
+        <div class="hero__meta-item"><strong>Red Room</strong><span>Private Dining</span></div>
       </div>
     </div>
-    <a href="#about" class="hero__scroll" aria-label="Scroll down">↓</a>
+    <a href="#signature" class="hero__scroll" aria-label="Scroll down">↓</a>
   </section>
 
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Gumbo</span><span>◆</span><span>Crawfish Étouffée</span><span>◆</span><span>Smothered Pork Chops</span><span>◆</span><span>Beef Tips &amp; Rice</span><span>◆</span><span>Fried Seafood</span><span>◆</span><span>Wangs &amp; Thangs</span><span>◆</span><span>Skeeta Bite</span><span>◆</span>
-      <span>Gumbo</span><span>◆</span><span>Crawfish Étouffée</span><span>◆</span><span>Smothered Pork Chops</span><span>◆</span><span>Beef Tips &amp; Rice</span><span>◆</span><span>Fried Seafood</span><span>◆</span><span>Wangs &amp; Thangs</span><span>◆</span><span>Skeeta Bite</span><span>◆</span>
+      <span>Smothered Catfish</span><span>◆</span><span>Crawfish Cornbread</span><span>◆</span><span>Seafood Gumbo</span><span>◆</span><span>Cassandra's Platter</span><span>◆</span><span>Oxtails</span><span>◆</span><span>Spicy Drunken Pasta</span><span>◆</span><span>Chicken &amp; Waffles</span><span>◆</span>
+      <span>Smothered Catfish</span><span>◆</span><span>Crawfish Cornbread</span><span>◆</span><span>Seafood Gumbo</span><span>◆</span><span>Cassandra's Platter</span><span>◆</span><span>Oxtails</span><span>◆</span><span>Spicy Drunken Pasta</span><span>◆</span><span>Chicken &amp; Waffles</span><span>◆</span>
     </div>
   </div>
 
-  <!-- About -->
-  <section class="about section" id="about">
-    <div class="container about__grid">
-      <div class="about__media reveal">
-        <div class="about__img about__img--1">
-          <img src="images/storefront.jpg" alt="Cassandra's on the River storefront in Shreveport, LA" />
-        </div>
-        <div class="about__img about__img--2">
-          <img src="images/chef.jpg" alt="Chef J of Cassandra's on the River" />
-        </div>
-        <div class="about__badge">
-          <span class="about__badge-num">Chef J</span>
-          <span class="about__badge-label">Welcomes<br />you</span>
-        </div>
-      </div>
-      <div class="about__body reveal">
-        <p class="eyebrow">You'll love dining with us</p>
-        <h2 class="section__title">Louisiana comfort, made for the whole family</h2>
-        <p class="section__text">
-          You'll never regret bringing your whole family to Cassandra's. Beyond a
-          mouthwatering menu of Cajun and Creole classics, we make every visit easy,
-          warm, and memorable.
-        </p>
-        <ul class="feature-list">
-          <li>
-            <span class="feature-list__icon">🍽️</span>
-            <div><strong>Reservations, any size</strong><p>Bring the whole family — parties of any size welcome.</p></div>
-          </li>
-          <li>
-            <span class="feature-list__icon">🥡</span>
-            <div><strong>Dine in or take out</strong><p>Tableside dining and takeout options for your convenience.</p></div>
-          </li>
-          <li>
-            <span class="feature-list__icon">🍹</span>
-            <div><strong>Daily happy hour</strong><p>Great deals on food and drinks, Tuesday through Friday.</p></div>
-          </li>
-        </ul>
-        <a href="#contact" class="link-arrow">Plan your visit <span>→</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Happy Hour -->
-  <section class="happy section" id="happy-hour">
-    <div class="container">
-      <div class="happy__head reveal">
-        <p class="eyebrow eyebrow--light">Tuesday – Friday · 3–6 PM</p>
-        <h2 class="section__title section__title--light">Happy Hour at the Bar</h2>
-        <p class="section__text section__text--light">Pull up a stool and let the good times roll. Our bartenders are shaking up favorites all afternoon.</p>
-      </div>
-      <div class="happy__cols">
-        <div class="happy__col reveal">
-          <h3 class="happy__col-title">Sips</h3>
-          <ul class="happy__menu">
-            <li><span>Margaritas</span><span class="dots"></span><span>$7</span></li>
-            <li><span>House Wines</span><span class="dots"></span><span>$6</span></li>
-            <li><span>Lemon Drops</span><span class="dots"></span><span>$8</span></li>
-            <li><span>Old Fashioned</span><span class="dots"></span><span>$9</span></li>
-            <li><span>Skeeta Bite</span><span class="dots"></span><span>$8</span></li>
-          </ul>
-        </div>
-        <div class="happy__col reveal">
-          <h3 class="happy__col-title">Bites</h3>
-          <ul class="happy__menu">
-            <li><span>Wangs &amp; Thangs</span><span class="dots"></span><span>$9</span></li>
-            <li><span>Shrimp Basket</span><span class="dots"></span><span>$11</span></li>
-            <li><span>Fish &amp; Chips</span><span class="dots"></span><span>$10</span></li>
-            <li><span>Chargrilled Oysters</span><span class="dots"></span><span>$12</span></li>
-            <li><span>Boudin Balls</span><span class="dots"></span><span>$8</span></li>
-          </ul>
-        </div>
-      </div>
-      <p class="happy__note reveal">*Menu is a representative mockup for demonstration. Prices illustrative.</p>
-    </div>
-  </section>
-
-  <!-- Menu -->
-  <section class="menu section" id="menu">
+  <!-- Signature dishes -->
+  <section class="signature section" id="signature">
     <div class="container">
       <div class="section__head reveal">
-        <p class="eyebrow">From our kitchen</p>
-        <h2 class="section__title">Signature Menu</h2>
-        <p class="section__text">A taste of what our kitchen is simmering, smothering, and frying up daily.</p>
+        <p class="eyebrow">The dishes we're known for</p>
+        <h2 class="section__title">Signature Plates</h2>
+        <p class="section__text">Louisiana classics made from scratch — the flavors that keep Shreveport coming back.</p>
+      </div>
+      <div class="signature__grid">
+        <article class="sigcard reveal">
+          <div class="sigcard__img"><img src="images/dish-seafood.jpg" alt="Golden fried seafood smothered in crawfish étouffée gravy" /></div>
+          <div class="sigcard__body">
+            <h3>Smothered Catfish</h3>
+            <p>Golden fried catfish blanketed in a rich seafood étouffée — a house signature.</p>
+            <span class="sigcard__price">$35.95</span>
+          </div>
+        </article>
+        <article class="sigcard reveal">
+          <div class="sigcard__img"><img src="images/dish-smothered.jpg" alt="Smothered pork chops with mashed potatoes, green beans and rolls" /></div>
+          <div class="sigcard__body">
+            <h3>Smothered Pork Chops</h3>
+            <p>Tender chops under brown gravy with two Southern sides.</p>
+            <span class="sigcard__price">$25.95</span>
+          </div>
+        </article>
+        <article class="sigcard reveal">
+          <div class="sigcard__img"><img src="images/dish-riceandgravy.jpg" alt="Beef tips and gravy over rice with cornbread" /></div>
+          <div class="sigcard__body">
+            <h3>Beef Tips</h3>
+            <p>Slow-simmered beef tips &amp; onions over rice with cornbread.</p>
+            <span class="sigcard__price">$26.95</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menus -->
+  <section class="menu section" id="menus">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Lunch · Dinner · Cocktails · Happy Hour</p>
+        <h2 class="section__title">Our Menus</h2>
+        <p class="section__text">A true taste of Louisiana. Dinner classics include two sides; seafood platters come with fries, coleslaw, hushpuppies &amp; tartar.</p>
       </div>
 
       <div class="menu__tabs" role="tablist" id="menuTabs">
-        <button class="menu__tab is-active" data-tab="starters" role="tab">Starters</button>
-        <button class="menu__tab" data-tab="mains" role="tab">Plates</button>
-        <button class="menu__tab" data-tab="seafood" role="tab">Seafood</button>
-        <button class="menu__tab" data-tab="sweets" role="tab">Sweets</button>
+        <button class="menu__tab is-active" data-tab="dinner" role="tab">Dinner</button>
+        <button class="menu__tab" data-tab="lunch" role="tab">Lunch</button>
+        <button class="menu__tab" data-tab="cocktails" role="tab">Cocktails &amp; Wine</button>
+        <button class="menu__tab" data-tab="happy" role="tab">Happy Hour</button>
       </div>
 
-      <div class="menu__panels">
-        <div class="menu__panel is-active" data-panel="starters">
-          <article class="dish reveal"><div class="dish__head"><h3>Chargrilled Oysters</h3><span class="dish__price">$16</span></div><p>Wood-fired, garlic butter, parmesan &amp; a squeeze of lemon.</p><span class="dish__tag">Chef's Pick</span></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Boudin Balls</h3><span class="dish__price">$11</span></div><p>Crispy Cajun rice &amp; pork bites with remoulade.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Cup of Gumbo</h3><span class="dish__price">$9</span></div><p>Chicken, andouille &amp; the holy trinity over rice.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Fried Green Tomatoes</h3><span class="dish__price">$10</span></div><p>Cornmeal-crusted with crawfish cream drizzle.</p></article>
+      <!-- Dinner -->
+      <div class="menu__panel is-active" data-panel="dinner" role="tabpanel" aria-label="Dinner menu">
+        <div class="menu__cols">
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Appetizers</h3>
+            <ul class="menu__list">
+              <li><span>Crab Cake</span><span class="dots"></span><span>$15.95</span></li>
+              <li><span>Fried Green Tomatoes</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Seafood Gumbo <em>cup / bowl</em></span><span class="dots"></span><span>$6.95 / $15.95</span></li>
+              <li><span>Crawfish Cornbread</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Gator Bites</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Ragin' Cajun Wings</span><span class="dots"></span><span>$12.95</span></li>
+              <li><span>Boudin Eggrolls</span><span class="dots"></span><span>$11.95</span></li>
+              <li><span>Cajun Oysters <em>6 / 12</em></span><span class="dots"></span><span>$16.95 / $33.95</span></li>
+              <li><span>Oyster Rockefeller <em>6 / 12</em></span><span class="dots"></span><span>$16.95 / $33.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Cassandra's Classics</h3>
+            <ul class="menu__list">
+              <li><span>Red Beans w/ Sausage</span><span class="dots"></span><span>$16.95</span></li>
+              <li><span>Chicken &amp; Waffles</span><span class="dots"></span><span>$18.95</span></li>
+              <li><span>Fried Chicken</span><span class="dots"></span><span>$19.95</span></li>
+              <li><span>Fried Pork Chops</span><span class="dots"></span><span>$24.95</span></li>
+              <li><span>Smothered Pork Chops</span><span class="dots"></span><span>$25.95</span></li>
+              <li><span>Smothered Chicken</span><span class="dots"></span><span>$21.95</span></li>
+              <li><span>Beef Tips</span><span class="dots"></span><span>$26.95</span></li>
+              <li><span>Hamburger Steak</span><span class="dots"></span><span>$23.95</span></li>
+              <li><span>Oxtails</span><span class="dots"></span><span>$39.95</span></li>
+              <li><span>Vegetable Plate</span><span class="dots"></span><span>$13.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Signature Seafood</h3>
+            <ul class="menu__list">
+              <li><span>Smothered Catfish</span><span class="dots"></span><span>$35.95</span></li>
+              <li><span>Crawfish Étouffée</span><span class="dots"></span><span>$24.95</span></li>
+              <li><span>Shrimp &amp; Grits Gumbo</span><span class="dots"></span><span>$23.95</span></li>
+              <li><span>Spicy Drunken Pasta</span><span class="dots"></span><span>$26.95</span></li>
+              <li><span>Creole Shrimp &amp; Grits</span><span class="dots"></span><span>$25.95</span></li>
+              <li><span>Creole Fish &amp; Grits</span><span class="dots"></span><span>$25.95</span></li>
+              <li><span>North Atlantic Salmon</span><span class="dots"></span><span>$38.95</span></li>
+              <li><span>Shrimp Fettuccini</span><span class="dots"></span><span>$22.95</span></li>
+              <li><span>Spicy Smothered Shrimp</span><span class="dots"></span><span>$22.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Classic Seafood</h3>
+            <ul class="menu__list">
+              <li><span>Cassandra's Platter</span><span class="dots"></span><span>$45.95</span></li>
+              <li><span>Seafood Platter</span><span class="dots"></span><span>$28.95</span></li>
+              <li><span>Gator Platter</span><span class="dots"></span><span>$28.95</span></li>
+              <li><span>Catfish &amp; Shrimp</span><span class="dots"></span><span>$26.95</span></li>
+              <li><span>Two Whole Catfish</span><span class="dots"></span><span>$26.95</span></li>
+              <li><span>Jumbo Shrimp</span><span class="dots"></span><span>$19.95</span></li>
+              <li><span>Oysters</span><span class="dots"></span><span>$25.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Steak &amp; Lamb</h3>
+            <ul class="menu__list">
+              <li><span>14 oz Boneless Ribeye</span><span class="dots"></span><span>$45.95</span></li>
+              <li><span>Dry-Aged Colorado Lamb Chops</span><span class="dots"></span><span>$47.95</span></li>
+            </ul>
+            <p class="menu__fine">Includes two sides &amp; salad.</p>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Desserts</h3>
+            <ul class="menu__list">
+              <li><span>Peach Cobbler</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>NY Cheesecake</span><span class="dots"></span><span>$10.95</span></li>
+              <li><span>Chocolate Cake</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>Bread Pudding</span><span class="dots"></span><span>$8.95</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="menu__panel" data-panel="mains">
-          <article class="dish reveal"><div class="dish__head"><h3>Smothered Pork Chop</h3><span class="dish__price">$18</span></div><p>Tender chop under rich brown gravy, mashed potatoes, green beans &amp; a roll.</p><span class="dish__tag">House Favorite</span></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Beef Tips &amp; Rice</h3><span class="dish__price">$17</span></div><p>Slow-simmered beef tips &amp; onions over rice with cornbread.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Smothered Chicken</h3><span class="dish__price">$16</span></div><p>Southern-style with two sides &amp; a buttery roll.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Jambalaya</h3><span class="dish__price">$21</span></div><p>Andouille, chicken &amp; shrimp simmered Creole-style.</p></article>
+      </div>
+
+      <!-- Lunch -->
+      <div class="menu__panel" data-panel="lunch" role="tabpanel" aria-label="Lunch menu">
+        <div class="menu__cols">
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Lunch Plates</h3>
+            <ul class="menu__list">
+              <li><span>Old Fashioned Hamburger</span><span class="dots"></span><span>$12.95</span></li>
+              <li><span>Hamburger Steak</span><span class="dots"></span><span>$12.95</span></li>
+              <li><span>Fried Chicken</span><span class="dots"></span><span>$12.95</span></li>
+              <li><span>Smothered Chicken</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Smothered Pork Chop</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Fried Pork Chop</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Chicken &amp; Waffles</span><span class="dots"></span><span>$18.95</span></li>
+              <li><span>Chef's Special</span><span class="dots"></span><span>$15.95</span></li>
+              <li><span>Red Beans &amp; Sausage</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Vegetable Plate</span><span class="dots"></span><span>$13.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Lunch Seafood</h3>
+            <ul class="menu__list">
+              <li><span>Seafood Po'Boy</span><span class="dots"></span><span>$15.95</span></li>
+              <li><span>Catfish Fillet</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Jumbo Shrimp</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Crawfish Étouffée</span><span class="dots"></span><span>$16.95</span></li>
+              <li><span>Smothered Catfish</span><span class="dots"></span><span>$23.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Appetizers &amp; Salads</h3>
+            <ul class="menu__list">
+              <li><span>Fried Green Tomatoes</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Boudin Eggrolls</span><span class="dots"></span><span>$11.95</span></li>
+              <li><span>Crawfish Cornbread</span><span class="dots"></span><span>$15.95</span></li>
+              <li><span>Gator Bites</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Wings</span><span class="dots"></span><span>$12.95</span></li>
+            </ul>
+            <p class="menu__fine">Cobb &amp; raspberry-vinaigrette salads available with chicken, shrimp, crab cake or salmon.</p>
+          </div>
         </div>
-        <div class="menu__panel" data-panel="seafood">
-          <article class="dish reveal"><div class="dish__head"><h3>Fried Seafood &amp; Étouffée</h3><span class="dish__price">$26</span></div><p>Golden fried shrimp &amp; fish smothered in crawfish étouffée gravy.</p><span class="dish__tag">Signature</span></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Crawfish Étouffée</h3><span class="dish__price">$24</span></div><p>Louisiana crawfish tails in a rich roux over rice.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Shrimp Basket</h3><span class="dish__price">$16</span></div><p>Golden fried Gulf shrimp with fries &amp; slaw.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Fish &amp; Chips</h3><span class="dish__price">$15</span></div><p>Beer-battered catch with tartar &amp; hand-cut fries.</p></article>
+      </div>
+
+      <!-- Cocktails & Wine -->
+      <div class="menu__panel" data-panel="cocktails" role="tabpanel" aria-label="Cocktails menu">
+        <div class="menu__cols">
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Signature Cocktails</h3>
+            <ul class="menu__list">
+              <li><span>Skeeta Bite</span><span class="dots"></span><span>$16.95</span></li>
+              <li><span>50 Grand Punch</span><span class="dots"></span><span>$16.95</span></li>
+              <li><span>Courvoisitini</span><span class="dots"></span><span>$14.95</span></li>
+              <li><span>Espresso Martini</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Limoncello Drop</span><span class="dots"></span><span>$13.95</span></li>
+              <li><span>Old Fashioned</span><span class="dots"></span><span>$12.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Wine &amp; Beer</h3>
+            <ul class="menu__list">
+              <li><span>House Wine <em>glass</em></span><span class="dots"></span><span>$7.95</span></li>
+              <li><span>House Wine <em>bottle</em></span><span class="dots"></span><span>$24.95</span></li>
+              <li><span>Bottles <em>select</em></span><span class="dots"></span><span>$29.95+</span></li>
+              <li><span>Moët &amp; Chandon</span><span class="dots"></span><span>$109.95</span></li>
+              <li><span>Domestic Beer</span><span class="dots"></span><span>$4.95</span></li>
+              <li><span>Premium / Import Beer</span><span class="dots"></span><span>$5.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Premium Spirits</h3>
+            <p class="menu__text-block">Clase Azul · Don Julio 1942 · Casamigos · Hennessy XO · D'Ussé · Johnnie Walker Blue · Woodford Reserve · Grey Goose · Cîroc &amp; more.</p>
+          </div>
         </div>
-        <div class="menu__panel" data-panel="sweets">
-          <article class="dish reveal"><div class="dish__head"><h3>Bread Pudding</h3><span class="dish__price">$9</span></div><p>Warm with bourbon caramel &amp; vanilla cream.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Beignets</h3><span class="dish__price">$8</span></div><p>Pillowy fried dough dusted in powdered sugar.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Praline Cheesecake</h3><span class="dish__price">$10</span></div><p>New Orleans praline swirl on a buttery crust.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Key Lime Pie</h3><span class="dish__price">$8</span></div><p>Tart, creamy &amp; finished with fresh whip.</p></article>
+      </div>
+
+      <!-- Happy Hour -->
+      <div class="menu__panel" data-panel="happy" role="tabpanel" aria-label="Happy menu">
+        <div class="happy__banner reveal">
+          <div>
+            <h3>Happy Hour</h3>
+            <p>3–6 PM · Bar area only <span class="confirm-tag">Days to be confirmed</span></p>
+          </div>
         </div>
+        <div class="menu__cols">
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">Happy Hour Bites</h3>
+            <ul class="menu__list">
+              <li><span>Hot Wings</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>Shrimp Basket</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>Catfish Basket</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>Wings &amp; Things</span><span class="dots"></span><span>$9.95</span></li>
+              <li><span>Boudin Eggrolls</span><span class="dots"></span><span>$9.95</span></li>
+            </ul>
+          </div>
+          <div class="menu__group reveal">
+            <h3 class="menu__group-title">At the Bar</h3>
+            <p class="menu__text-block">Drink specials on select cocktails, wine &amp; beer during happy hour. Ask your bartender for today's pours.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu__note reveal">*Prices reflect current published menus and are shown for this mockup. Final pricing, happy-hour days &amp; times to be owner-confirmed before launch.</p>
+    </div>
+  </section>
+
+  <!-- Private Dining / Red Room -->
+  <section class="private section" id="private">
+    <div class="container private__grid">
+      <div class="private__media reveal" aria-hidden="true"></div>
+      <div class="private__body reveal">
+        <p class="eyebrow eyebrow--light">Private Dining</p>
+        <h2 class="section__title section__title--light">The Red Room</h2>
+        <p class="section__text section__text--light">
+          An intimate, elegant space for corporate meetings, milestone celebrations,
+          and family gatherings — right on the river.
+        </p>
+        <ul class="private__specs">
+          <li><strong>Up to 25</strong><span>Guests</span></li>
+          <li><strong>$500</strong><span>Room fee</span></li>
+          <li><strong>$1,000</strong><span>Minimum spend</span></li>
+          <li><strong>Screen</strong><span>Presentation-ready</span></li>
+        </ul>
+        <p class="private__fine">Plus applicable tax &amp; gratuity. Booking confirmed once payment is received. No outside food, confetti, or latex balloons.</p>
+        <a href="#reserve" class="btn btn--primary">Inquire About the Red Room</a>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="gallery section" id="gallery">
+  <!-- Events -->
+  <section class="events section" id="events">
     <div class="container">
       <div class="section__head reveal">
-        <p class="eyebrow">A look inside</p>
-        <h2 class="section__title">The Cassandra's Experience</h2>
+        <p class="eyebrow">On the Red</p>
+        <h2 class="section__title">Live Music &amp; Events</h2>
+        <p class="section__text">From our free <em>Rhythms on the Red</em> live music series to ticketed dining experiences — there's always something happening.</p>
       </div>
-      <div class="gallery__grid">
-        <figure class="gallery__item gallery__item--tall reveal" data-label="Fried seafood, smothered in étouffée">
-          <img src="images/dish-seafood.jpg" alt="Fried seafood smothered in crawfish étouffée gravy" />
-        </figure>
-        <figure class="gallery__item reveal" data-label="Smothered plate & fixin's">
-          <img src="images/dish-smothered.jpg" alt="Smothered meat with mashed potatoes, green beans and rolls" />
-        </figure>
-        <figure class="gallery__item reveal" data-label="Beef tips over rice">
-          <img src="images/dish-riceandgravy.jpg" alt="Beef tips and gravy over rice with cornbread" />
-        </figure>
-        <figure class="gallery__item gallery__item--wide reveal" data-label="On the River · Shreveport, LA">
-          <img src="images/storefront.jpg" alt="Cassandra's on the River storefront" />
-        </figure>
-        <figure class="gallery__item reveal" data-label="Come enjoy seafood with us">
-          <img src="images/chef.jpg" alt="Chef J of Cassandra's on the River" />
-        </figure>
+      <div class="events__grid">
+        <article class="event-card reveal">
+          <div class="event-card__tag">Live Music Series</div>
+          <h3>Rhythms on the Red</h3>
+          <p>Free live music in partnership with the Red River District. Bands take the stage 8–11 PM.</p>
+          <span class="event-card__meta">Free admission · Seasonal schedule</span>
+        </article>
+        <article class="event-card reveal">
+          <div class="event-card__tag">Ticketed Experience</div>
+          <h3>BBQ, Brews &amp; Bourbon</h3>
+          <p>Buffet, beverages &amp; live entertainment. A taste of our special-event lineup.</p>
+          <span class="event-card__meta">Early bird $65 · Kids 4–11 $25</span>
+        </article>
+        <article class="event-card event-card--cta reveal">
+          <h3>Upcoming Events</h3>
+          <p>New dates are added throughout the season. Check back for the latest live music &amp; special dinners.</p>
+          <a href="#visit" class="link-arrow link-arrow--light">Get on the list <span>→</span></a>
+        </article>
       </div>
+      <p class="menu__note reveal">*Events module is designed to automatically feature upcoming dates and hide expired ones on the live site.</p>
     </div>
   </section>
 
-  <!-- Careers -->
-  <section class="careers section" id="careers">
-    <div class="container careers__inner reveal">
-      <div class="careers__body">
-        <p class="eyebrow eyebrow--light">Join the family</p>
-        <h2 class="section__title section__title--light">Ready for your next career move?</h2>
-        <p class="section__text section__text--light">
-          We're hiring across the front of house and the kitchen — hosts, servers,
-          line cooks, and dishwashers. Build your restaurant career with a team that
-          feels like home.
+  <!-- Chef Story -->
+  <section class="story section" id="story">
+    <div class="container story__grid">
+      <div class="story__media reveal">
+        <div class="story__img"><img src="images/chef.jpg" alt="Executive Chef Cassandra — Chef J" /></div>
+        <div class="story__badge">
+          <span>Est.</span><strong>2024</strong>
+        </div>
+      </div>
+      <div class="story__body reveal">
+        <p class="eyebrow">Meet the chef</p>
+        <h2 class="section__title">Chef Cassandra — “Chef J”</h2>
+        <p class="section__text">
+          Executive Chef Cassandra opened Cassandra's on the River in Shreveport's Red
+          River District in June 2024, bringing generations of Louisiana cooking to the
+          riverfront. Every plate — from the seafood gumbo to the smothered catfish —
+          is rooted in authentic Cajun and Creole tradition and served with genuine
+          Southern hospitality.
         </p>
-        <a href="#contact" class="btn btn--primary">Apply Now</a>
+        <p class="section__text">
+          “Come enjoy seafood with us.” It's more than an invitation — it's how the
+          whole team welcomes every guest, every night.
+        </p>
+        <a href="#reserve" class="link-arrow">Join us for dinner <span>→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- Reserve / Contact -->
-  <section class="reserve section" id="reserve">
-    <div class="container reserve__grid">
-      <div class="reserve__info reveal" id="contact">
+  <!-- Reviews -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">What guests are saying</p>
+        <h2 class="section__title">Loved by Shreveport</h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>“The smothered pork chops and collard greens were incredible — generous portions and the service made us feel like family.”</p>
+          <cite>— Local Guest</cite>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>“Best catfish in Shreveport, hands down. Add the live music and great cocktails and it's our new favorite spot.”</p>
+          <cite>— Regular Diner</cite>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>“Beautiful atmosphere on the river, amazing seafood, and the drinks are top-notch. Perfect for a celebration.”</p>
+          <cite>— Party of 8</cite>
+        </blockquote>
+      </div>
+      <p class="reviews__more reveal"><a href="#" class="link-arrow">See more reviews <span>→</span></a></p>
+    </div>
+  </section>
+
+  <!-- Visit / Reserve -->
+  <section class="visit section" id="visit">
+    <div class="container visit__grid">
+      <div class="visit__info reveal">
         <p class="eyebrow">Visit us</p>
-        <h2 class="section__title">Reserve your table</h2>
-        <p class="section__text">Call ahead or send a request below — we accept reservations for parties of any size.</p>
-        <ul class="reserve__details">
+        <h2 class="section__title">On the Red River</h2>
+        <ul class="visit__details">
+          <li><span>📍</span><span>500 Clyde Fant Pkwy, Suite 100<br />Shreveport, LA 71101</span></li>
           <li><span>📞</span><a href="tel:3186267159">(318) 626-7159</a></li>
-          <li><span>📍</span><span>Shreveport, LA · On the River</span></li>
-          <li><span>🕒</span><span>Tue–Sun · Happy Hour Tue–Fri 3–6 PM</span></li>
+          <li><span>✉️</span><a href="mailto:admin@cassandrasontheriver.com">admin@cassandrasontheriver.com</a></li>
+          <li><span>📷</span><a href="https://instagram.com/cassandrasontheriver" target="_blank" rel="noopener">@cassandrasontheriver</a></li>
         </ul>
+        <h3 class="visit__hours-title">Hours</h3>
+        <table class="hours">
+          <tbody>
+            <tr><th>Monday</th><td class="hours--closed">Closed</td></tr>
+            <tr><th>Tuesday</th><td>11:00 AM – 9:00 PM</td></tr>
+            <tr><th>Wednesday</th><td>11:00 AM – 9:00 PM</td></tr>
+            <tr><th>Thursday</th><td>11:00 AM – 9:00 PM</td></tr>
+            <tr><th>Friday</th><td>11:00 AM – 10:00 PM</td></tr>
+            <tr><th>Saturday</th><td>11:00 AM – 10:00 PM</td></tr>
+            <tr><th>Sunday</th><td>11:00 AM – 6:00 PM</td></tr>
+          </tbody>
+        </table>
+        <p class="visit__fine">Hours per Cassandra's official contact page — to be owner-confirmed before launch.</p>
       </div>
       <form class="reserve__form reveal" id="reserveForm" novalidate>
+        <h3 class="reserve__form-title" id="reserve">Reserve a Table</h3>
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -265,7 +464,7 @@
           <div class="field">
             <label for="guests">Guests</label>
             <select id="guests" name="guests">
-              <option>1–2</option><option>3–4</option><option>5–6</option><option>7+</option>
+              <option>1–2</option><option>3–4</option><option>5–6</option><option>7–9</option><option>10–15 (large party)</option>
             </select>
           </div>
         </div>
@@ -273,30 +472,35 @@
           <label for="phone">Phone</label>
           <input id="phone" name="phone" type="tel" placeholder="(318) 000-0000" required />
         </div>
+        <p class="reserve__hint" id="partyHint" hidden>Large parties (10–15) are booked with a dedicated process and a booking fee during peak hours — we'll follow up to confirm details.</p>
         <button type="submit" class="btn btn--primary btn--full">Request Reservation</button>
-        <p class="reserve__form-note" id="formNote" hidden>Thanks! This is a demo form — we'll connect it to your booking system for the live site.</p>
+        <p class="reserve__form-note" id="formNote" hidden>Thanks! This is a demo form — on the live site we'll connect it to your booking &amp; large-party system.</p>
       </form>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
         <img src="images/logo.png" alt="Cassandra's on the River" class="footer__logo" />
-        <p>Authentic Cajun &amp; Creole seafood in Shreveport, LA.</p>
+        <p>Authentic Cajun &amp; Creole seafood and Southern comfort on the Red River · Shreveport, LA.</p>
       </div>
       <nav class="footer__links" aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#happy-hour">Happy Hour</a>
-        <a href="#careers">Careers</a>
+        <a href="#menus">Menus</a>
+        <a href="#private">Private Dining</a>
+        <a href="#events">Events</a>
+        <a href="#story">Our Story</a>
+        <a href="#visit">Visit</a>
         <a href="#reserve">Reserve</a>
+        <a href="#" class="footer__careers">Careers</a>
       </nav>
     </div>
     <div class="footer__bottom container">
-      <span>© <span id="year"></span> Cassandra's on the River · Mockup</span>
-      <span class="footer__made">Design mockup for client review</span>
+      <span>© <span id="year"></span> Cassandra's on the River · Design mockup for client review</span>
+      <span class="footer__made">Now hiring: hosts, servers, bartenders, cooks &amp; managers</span>
     </div>
   </footer>
 
