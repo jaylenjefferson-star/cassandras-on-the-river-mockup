@@ -24,11 +24,7 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#home" class="brand" aria-label="Cassandra's on the River home">
-        <span class="brand__mark">C</span>
-        <span class="brand__text">
-          <span class="brand__name">Cassandra's</span>
-          <span class="brand__sub">on the River</span>
-        </span>
+        <img src="images/logo.png" alt="Cassandra's on the River" class="brand__logo" />
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#about">About</a>
@@ -50,13 +46,13 @@
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="container hero__content">
-      <p class="hero__eyebrow reveal">Authentic Cajun & Creole · Shreveport, LA</p>
+      <p class="hero__eyebrow reveal">Authentic Cajun &amp; Creole · Shreveport, LA</p>
       <h1 class="hero__title reveal">
         A Taste of Louisiana,<br /><em>Right on the River.</em>
       </h1>
       <p class="hero__lede reveal">
-        Fresh Gulf seafood, slow-simmered gumbo, and hand-shaken cocktails —
-        served with Southern warmth for your whole family.
+        Fresh Gulf seafood, smothered classics, and soul-warming Creole cooking —
+        served with Southern hospitality for your whole family.
       </p>
       <div class="hero__actions reveal">
         <a href="#reserve" class="btn btn--primary">Reserve a Table</a>
@@ -74,8 +70,8 @@
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Gumbo</span><span>•</span><span>Crawfish Étouffée</span><span>•</span><span>Chargrilled Oysters</span><span>•</span><span>Shrimp Baskets</span><span>•</span><span>Fish & Chips</span><span>•</span><span>Wangs & Thangs</span><span>•</span><span>Skeeta Bite</span><span>•</span>
-      <span>Gumbo</span><span>•</span><span>Crawfish Étouffée</span><span>•</span><span>Chargrilled Oysters</span><span>•</span><span>Shrimp Baskets</span><span>•</span><span>Fish & Chips</span><span>•</span><span>Wangs & Thangs</span><span>•</span><span>Skeeta Bite</span><span>•</span>
+      <span>Gumbo</span><span>◆</span><span>Crawfish Étouffée</span><span>◆</span><span>Smothered Pork Chops</span><span>◆</span><span>Beef Tips &amp; Rice</span><span>◆</span><span>Fried Seafood</span><span>◆</span><span>Wangs &amp; Thangs</span><span>◆</span><span>Skeeta Bite</span><span>◆</span>
+      <span>Gumbo</span><span>◆</span><span>Crawfish Étouffée</span><span>◆</span><span>Smothered Pork Chops</span><span>◆</span><span>Beef Tips &amp; Rice</span><span>◆</span><span>Fried Seafood</span><span>◆</span><span>Wangs &amp; Thangs</span><span>◆</span><span>Skeeta Bite</span><span>◆</span>
     </div>
   </div>
 
@@ -83,11 +79,15 @@
   <section class="about section" id="about">
     <div class="container about__grid">
       <div class="about__media reveal">
-        <div class="about__img about__img--1"></div>
-        <div class="about__img about__img--2"></div>
+        <div class="about__img about__img--1">
+          <img src="images/storefront.jpg" alt="Cassandra's on the River storefront in Shreveport, LA" />
+        </div>
+        <div class="about__img about__img--2">
+          <img src="images/chef.jpg" alt="Chef J of Cassandra's on the River" />
+        </div>
         <div class="about__badge">
-          <span class="about__badge-num">Est.</span>
-          <span class="about__badge-label">On the River</span>
+          <span class="about__badge-num">Chef J</span>
+          <span class="about__badge-label">Welcomes<br />you</span>
         </div>
       </div>
       <div class="about__body reveal">
@@ -157,13 +157,13 @@
       <div class="section__head reveal">
         <p class="eyebrow">From our kitchen</p>
         <h2 class="section__title">Signature Menu</h2>
-        <p class="section__text">A taste of what our chefs are simmering, blackening, and chargrilling daily.</p>
+        <p class="section__text">A taste of what our kitchen is simmering, smothering, and frying up daily.</p>
       </div>
 
       <div class="menu__tabs" role="tablist" id="menuTabs">
         <button class="menu__tab is-active" data-tab="starters" role="tab">Starters</button>
-        <button class="menu__tab" data-tab="mains" role="tab">Mains</button>
-        <button class="menu__tab" data-tab="seafood" role="tab">Seafood Boils</button>
+        <button class="menu__tab" data-tab="mains" role="tab">Plates</button>
+        <button class="menu__tab" data-tab="seafood" role="tab">Seafood</button>
         <button class="menu__tab" data-tab="sweets" role="tab">Sweets</button>
       </div>
 
@@ -175,14 +175,14 @@
           <article class="dish reveal"><div class="dish__head"><h3>Fried Green Tomatoes</h3><span class="dish__price">$10</span></div><p>Cornmeal-crusted with crawfish cream drizzle.</p></article>
         </div>
         <div class="menu__panel" data-panel="mains">
-          <article class="dish reveal"><div class="dish__head"><h3>Crawfish Étouffée</h3><span class="dish__price">$24</span></div><p>Louisiana crawfish tails in a rich roux over rice.</p><span class="dish__tag">Signature</span></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Blackened Redfish</h3><span class="dish__price">$27</span></div><p>Gulf redfish, Cajun spice, lemon-butter beurre blanc.</p></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Shrimp &amp; Grits</h3><span class="dish__price">$22</span></div><p>Stone-ground grits, tasso ham &amp; Gulf shrimp.</p></article>
+          <article class="dish reveal"><div class="dish__head"><h3>Smothered Pork Chop</h3><span class="dish__price">$18</span></div><p>Tender chop under rich brown gravy, mashed potatoes, green beans &amp; a roll.</p><span class="dish__tag">House Favorite</span></article>
+          <article class="dish reveal"><div class="dish__head"><h3>Beef Tips &amp; Rice</h3><span class="dish__price">$17</span></div><p>Slow-simmered beef tips &amp; onions over rice with cornbread.</p></article>
+          <article class="dish reveal"><div class="dish__head"><h3>Smothered Chicken</h3><span class="dish__price">$16</span></div><p>Southern-style with two sides &amp; a buttery roll.</p></article>
           <article class="dish reveal"><div class="dish__head"><h3>Jambalaya</h3><span class="dish__price">$21</span></div><p>Andouille, chicken &amp; shrimp simmered Creole-style.</p></article>
         </div>
         <div class="menu__panel" data-panel="seafood">
-          <article class="dish reveal"><div class="dish__head"><h3>Crawfish Boil (lb)</h3><span class="dish__price">Market</span></div><p>Seasonal boil with corn, potatoes &amp; sausage.</p><span class="dish__tag">Seasonal</span></article>
-          <article class="dish reveal"><div class="dish__head"><h3>Snow Crab Cluster</h3><span class="dish__price">$32</span></div><p>Steamed &amp; tossed in your choice of house seasoning.</p></article>
+          <article class="dish reveal"><div class="dish__head"><h3>Fried Seafood &amp; Étouffée</h3><span class="dish__price">$26</span></div><p>Golden fried shrimp &amp; fish smothered in crawfish étouffée gravy.</p><span class="dish__tag">Signature</span></article>
+          <article class="dish reveal"><div class="dish__head"><h3>Crawfish Étouffée</h3><span class="dish__price">$24</span></div><p>Louisiana crawfish tails in a rich roux over rice.</p></article>
           <article class="dish reveal"><div class="dish__head"><h3>Shrimp Basket</h3><span class="dish__price">$16</span></div><p>Golden fried Gulf shrimp with fries &amp; slaw.</p></article>
           <article class="dish reveal"><div class="dish__head"><h3>Fish &amp; Chips</h3><span class="dish__price">$15</span></div><p>Beer-battered catch with tartar &amp; hand-cut fries.</p></article>
         </div>
@@ -204,11 +204,21 @@
         <h2 class="section__title">The Cassandra's Experience</h2>
       </div>
       <div class="gallery__grid">
-        <figure class="gallery__item gallery__item--tall reveal" data-label="Chargrilled to perfection"></figure>
-        <figure class="gallery__item reveal" data-label="Riverside seating"></figure>
-        <figure class="gallery__item reveal" data-label="Fresh from the Gulf"></figure>
-        <figure class="gallery__item gallery__item--wide reveal" data-label="Happy hour, done right"></figure>
-        <figure class="gallery__item reveal" data-label="Crafted cocktails"></figure>
+        <figure class="gallery__item gallery__item--tall reveal" data-label="Fried seafood, smothered in étouffée">
+          <img src="images/dish-seafood.jpg" alt="Fried seafood smothered in crawfish étouffée gravy" />
+        </figure>
+        <figure class="gallery__item reveal" data-label="Smothered plate & fixin's">
+          <img src="images/dish-smothered.jpg" alt="Smothered meat with mashed potatoes, green beans and rolls" />
+        </figure>
+        <figure class="gallery__item reveal" data-label="Beef tips over rice">
+          <img src="images/dish-riceandgravy.jpg" alt="Beef tips and gravy over rice with cornbread" />
+        </figure>
+        <figure class="gallery__item gallery__item--wide reveal" data-label="On the River · Shreveport, LA">
+          <img src="images/storefront.jpg" alt="Cassandra's on the River storefront" />
+        </figure>
+        <figure class="gallery__item reveal" data-label="Come enjoy seafood with us">
+          <img src="images/chef.jpg" alt="Chef J of Cassandra's on the River" />
+        </figure>
       </div>
     </div>
   </section>
@@ -273,11 +283,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="brand__mark">C</span>
-        <div>
-          <span class="brand__name">Cassandra's on the River</span>
-          <p>Authentic Cajun &amp; Creole seafood in Shreveport, LA.</p>
-        </div>
+        <img src="images/logo.png" alt="Cassandra's on the River" class="footer__logo" />
+        <p>Authentic Cajun &amp; Creole seafood in Shreveport, LA.</p>
       </div>
       <nav class="footer__links" aria-label="Footer">
         <a href="#about">About</a>
